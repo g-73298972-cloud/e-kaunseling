@@ -1,0 +1,1 @@
+// Redundant root file. Logic is in components/PsychometricManager.tsx

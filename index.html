@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Dashboard | Cikgu Lily</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --bg-color: #000000;
+        --card-bg: #0a0a0a;
+        --card-hover-bg: #111111;
+        --border-color: #1a1a1a;
+        --text-primary: #ffffff; 
+        --text-secondary: #a1a1aa;
+        --accent-color: #ff007a;
+        --accent-glow: rgba(255, 0, 122, 0.3);
+        --main-font: "Times New Roman", Times, serif;
+        --sidebar-bg: rgba(5, 5, 5, 0.98);
+        --name-gradient: linear-gradient(to right, #ffffff, #ff007a);
+      }
+
+      body {
+        font-family: var(--main-font);
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        min-height: 100vh;
+        transition: background-color 0.5s ease, color 0.3s ease;
+      }
+
+      .font-heading { font-family: var(--main-font); font-weight: bold; }
+      .text-main { color: var(--text-primary) !important; }
+
+      .bp-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 1rem;
+        color: var(--text-primary);
+        transition: all 0.3s ease;
+      }
+
+      .bp-card:hover {
+        border-color: var(--accent-color);
+        box-shadow: 0 10px 40px -10px var(--accent-glow);
+      }
+
+      .btn-pink {
+        background: var(--accent-color);
+        color: #000 !important;
+        font-weight: 900;
+      }
+
+      .sidebar-glass {
+        background: var(--sidebar-bg);
+        backdrop-filter: blur(20px);
+        border-right: 1px solid var(--border-color);
+      }
+
+      .dynamic-accent-text {
+        background: linear-gradient(to right, #fff, #ff007a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      input, textarea, select {
+        background-color: #000 !important;
+        color: #fff !important;
+        border: 1px solid #1a1a1a !important;
+      }
+
+      .vertical-text { writing-mode: vertical-rl; }
+
+      .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: #1a1a1a; border-radius: 10px; }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #ff007a; }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.474.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

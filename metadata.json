@@ -1,0 +1,7 @@
+{
+  "name": "e-Kaunseling Cikgu Lily",
+  "description": "A comprehensive dashboard for Cikgu Lily to manage and track school counseling programs across four main focus areas: Personal Development, Discipline, Career, and Mental Wellbeing.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
