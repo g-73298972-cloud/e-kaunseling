@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { saveEntry, getEntries } from "./api";
 import { FocusArea, ProgramRecord, UserProfile, SessionEntry, TeachInRecord, WeeklyAnalysis, PRSMember, PRSContent, FileAttachment, AssemblyRecord, MeetingRecord, ExternalTrainingRecord, WeeklyDutyRecord, SuccessFormRecord, BilikRecord, SumbanganRecord, BureauRecord, InovasiRecord, RujukanRecord, VisitorFeedback, PsychometricScore, PsychometricEvidence, MediaRecord } from './types';
 import Header from './components/Header';
 import KPISection from './components/KPISection';
