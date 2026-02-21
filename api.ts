@@ -1,4 +1,4 @@
-const API_BASE = "https://e-kaunseling-api-g-73298972.workers.dev";
+const API_BASE = "https://e-kaunseling-api.g-73298972.workers.dev";
 
 export async function saveEntry(module: string, dataObj: any) {
   const res = await fetch(`${API_BASE}/entries`, {
